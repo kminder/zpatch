@@ -1,0 +1,7 @@
+patch:
+  product: test-project
+  version: test-version
+files:
+  zip-test-file-top.txt: {mod: rw-rw-rw-, grp: everyone, src: src-test-file-top.txt}
+  zip-test-dir/zip-test-file-top.txt: {mod: rw-r--r--, grp: everyone, src: src-test-file-top.txt}
+  zip-test-dir/zip-test-sub-dir/zip-test-file.txt: {mod: rw-r--r--, grp: everyone, src: src-test-dir/src-test-file-dir.txt}
