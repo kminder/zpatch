@@ -5,9 +5,9 @@ import org.apache.commons.collections.map.MultiKeyMap;
 
 abstract class Methods {
 
-  public static final String REPLACE = "replace";
-  public static final String PATCH = "patch";
-  public static final String DELETE = "delete";
+  public static final String REPLACE = "rep";
+  public static final String PATCH = "pat";
+  public static final String DELETE = "del";
 
   private static MultiKeyMap visitors = null;
 

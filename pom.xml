@@ -6,7 +6,7 @@
 
     <groupId>net.minder</groupId>
     <artifactId>zpatch</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <properties>
         <main-class>net.minder.zpatch.Main</main-class>

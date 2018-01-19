@@ -17,12 +17,12 @@ public class JsonUtilTest {
 
     fileInfo = new Metadata.FileInfo();
     str = JsonUtil.writeToString( fileInfo );
-    assertThat( str, is("{}") );
+    assertThat( str, is("{\"typ\":\"rep\"}") );
 
     fileInfo = new Metadata.FileInfo();
     fileInfo.setSrc( "test-source" );
     str = JsonUtil.writeToString( fileInfo );
-    assertThat( str, is("{src:\"test-source\"}") );
+    assertThat( str, is("{\"src\":\"test-source\",\"typ\":\"rep\"}") );
 
   }
 

@@ -17,14 +17,12 @@ public class YamlUtilTest {
 
     fileInfo = new Metadata.FileInfo();
     str = YamlUtil.writeToString( fileInfo );
-    assertThat( str, is("{}\n") );
+    assertThat( str, is("typ: rep\n") );
 
     fileInfo = new Metadata.FileInfo();
     fileInfo.setSrc( "test-source" );
     str = YamlUtil.writeToString( fileInfo );
-    assertThat( str, is("src: test-source\n") );
+    assertThat( str, is("src: test-source\ntyp: rep\n") );
   }
-
-
 
 }

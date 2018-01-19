@@ -71,7 +71,7 @@ public class Metadata {
     public String getTyp() {
       String t = type;
       if ( t == null ) {
-        t = "replace";
+        t = Methods.REPLACE;
       }
       return t;
     }
