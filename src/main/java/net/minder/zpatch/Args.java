@@ -31,7 +31,7 @@ public class Args {
   private static final String OPT_PATCH = "patch";
   private static final String OPT_METADATA = "metadata";
   private static final String OPT_DIR = "dir";
-  private static final String OPT_FORCE = "force";
+  //private static final String OPT_FORCE = "force";
 
   private static Options options() {
     Options options = new Options();
@@ -49,8 +49,8 @@ public class Args {
     options.addOption( CMD_CLEANUP, false, "Cleanup intermediate files." );
     options.addOption( OPT_PATCH, true, "Patch file to use or create. Defaults to patch.zip. Required." );
     options.addOption( OPT_METADATA, true, "Location of metadata file for patch creation. Required for create." );
-    options.addOption( OPT_DIR, true, "Root directory for patch creation or appliation. Defaults to current directory." );
-    options.addOption( OPT_FORCE, true, "Force the overwrite of left over phase files. Defaults to false." );
+    options.addOption( OPT_DIR, true, "Root directory for patch creation or application. Defaults to current directory." );
+    //options.addOption( OPT_FORCE, true, "Force the overwrite of left over phase files. Defaults to false." );
     return options;
   }
 
@@ -131,9 +131,9 @@ public class Args {
     return args.hasOption( CMD_REVERT );
   }
 
-  boolean isForce() {
-    return args.hasOption( OPT_FORCE );
-  }
+//  boolean isForce() {
+//    return args.hasOption( OPT_FORCE );
+//  }
 
   String getDirectory() {
     return args.getOptionValue( OPT_DIR, System.getProperty( "user.dir" ) );
